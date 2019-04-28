@@ -1,0 +1,60 @@
+$navbar-background:                              $global-dark-background !default;
+$navbar-max-height:                              $global-navbar-max-height !default;
+$navbar-min-height:                              $global-navbar-min-height !default;
+$navbar-item-spacing:                            $global-navbar-item-spacing !default;
+
+.navbar,
+[narbar] {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  background-color: $navbar-background;
+  color: white;
+  max-height: $navbar-max-height;
+  min-height: $navbar-min-height;
+  justify-content: flex-start;
+  align-items: center;
+
+  .navbar-item {
+    flex-basis: 5%;
+    padding: 0 10px;
+    white-space: nowrap;
+  }
+
+  &.navbar-right {
+    justify-content: flex-end;
+  }
+
+  &.navbar-left {
+    justify-content: flex-start;
+  }
+
+  &.navbar-center {
+    justify-content: center;
+  }
+
+  &.navbar-even {
+    justify-content: space-between;
+  }
+  &.flash-bg-primary {
+    background: $global-primary-color;
+  }
+  &.flash-bg-secondary {
+    background: $global-secondary-color;
+  }
+
+  &.flash-bg-danger {
+    background: $global-danger-color;
+  }
+
+  &.flash-bg-warning {
+    background: $global-warning-color;
+  }
+
+  &.flash-bg-info {
+    background: $global-info-color;
+  }
+}
+
+
