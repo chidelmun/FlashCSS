@@ -245,6 +245,8 @@ textarea {
  */
 button {
   overflow: visible;
+  min-width: 6em;
+  min-height: 2em;
 }
 
 /**
@@ -404,7 +406,7 @@ th {
 }
 
 .flash-hidden\@s {
-  display: none;
+  display: none !important;
 }
 
 flash-hidden\@m {
@@ -422,6 +424,10 @@ flash-hidden\@l {
 }
 .flash-section.flash-text-center {
   text-align: center !important;
+}
+
+.flash-button.flash-primary-button {
+  background: white;
 }
 
 [flash-container],
@@ -531,8 +537,6 @@ flash-hidden\@l {
 
 .navbar,
 [narbar] {
-  max-width: 99%;
-  min-width: 99%;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
