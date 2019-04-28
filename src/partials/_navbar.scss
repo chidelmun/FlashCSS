@@ -55,6 +55,9 @@ $navbar-item-spacing:                            $global-navbar-item-spacing !de
   &.flash-bg-info {
     background: $global-info-color;
   }
+  &.flash-navbar-fixed {
+    position: fixed !important;
+  }
 }
 
 

@@ -414,7 +414,7 @@ flash-hidden\@l {
 .flash-section {
   min-height: 10em;
   background: tan;
-  padding: 1em 1em;
+  padding: 0.4em 0.4em;
 }
 
 [flash-container],
@@ -423,7 +423,7 @@ flash-hidden\@l {
   flex-direction: row;
   flex-wrap: nowrap;
   background: #f9fbfb;
-  position: relative;
+  position: initial;
   width: 100%;
   margin: 0 auto;
   box-sizing: border-box;
@@ -576,6 +576,10 @@ flash-hidden\@l {
 .navbar.flash-bg-info,
 [narbar].flash-bg-info {
   background: #0FA0CE;
+}
+.navbar.flash-navbar-fixed,
+[narbar].flash-navbar-fixed {
+  position: fixed !important;
 }
 
 /*# sourceMappingURL=flash.cssclear.map */
