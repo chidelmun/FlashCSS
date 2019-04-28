@@ -437,6 +437,7 @@ flash-hidden\@l {
 .column-1-6, column-1 {
   flex-basis: calc((1 / 6) * 99%);
   border: 1px solid black;
+  padding: 1% 1%;
 }
 @media (max-width: 720px) {
   .column-1-6, column-1 {
@@ -448,6 +449,7 @@ flash-hidden\@l {
 .column-2-6, column-2 {
   flex-basis: calc((2 / 6) * 99%);
   border: 1px solid black;
+  padding: 1% 1%;
 }
 @media (max-width: 720px) {
   .column-2-6, column-2 {
@@ -459,6 +461,7 @@ flash-hidden\@l {
 .column-3-6, column-3 {
   flex-basis: calc((3 / 6) * 99%);
   border: 1px solid black;
+  padding: 1% 1%;
 }
 @media (max-width: 720px) {
   .column-3-6, column-3 {
@@ -470,6 +473,7 @@ flash-hidden\@l {
 .column-4-6, column-4 {
   flex-basis: calc((4 / 6) * 99%);
   border: 1px solid black;
+  padding: 1% 1%;
 }
 @media (max-width: 720px) {
   .column-4-6, column-4 {
@@ -481,6 +485,7 @@ flash-hidden\@l {
 .column-5-6, column-5 {
   flex-basis: calc((5 / 6) * 99%);
   border: 1px solid black;
+  padding: 1% 1%;
 }
 @media (max-width: 720px) {
   .column-5-6, column-5 {
@@ -492,12 +497,23 @@ flash-hidden\@l {
 .column-6-6, column-6 {
   flex-basis: calc((6 / 6) * 99%);
   border: 1px solid black;
+  padding: 1% 1%;
 }
 @media (max-width: 720px) {
   .column-6-6, column-6 {
     background-color: #0FA0CE;
     flex-basis: 100%;
   }
+}
+
+.flash-card, [flash-card] {
+  min-width: 284px;
+  min-height: 284px;
+  max-width: 100%;
+  padding: 10px 10px 20px 10px;
+  border: 1px solid #BFBFBF;
+  background-color: white;
+  box-shadow: 10px 10px 5px #aaaaaa;
 }
 
 .navbar,
