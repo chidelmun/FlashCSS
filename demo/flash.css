@@ -592,6 +592,7 @@ flash-hidden\@l {
 .navbar.flash-navbar-fixed,
 [narbar].flash-navbar-fixed {
   position: fixed !important;
+  min-width: calc(100% - 1em);
 }
 
 /*# sourceMappingURL=flash.css.map */
