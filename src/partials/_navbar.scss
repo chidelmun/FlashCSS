@@ -5,7 +5,8 @@ $navbar-item-spacing:                            $global-navbar-item-spacing !de
 
 .navbar,
 [narbar] {
-  width: 100%;
+  max-width: 99%;
+  min-width: 99%;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
