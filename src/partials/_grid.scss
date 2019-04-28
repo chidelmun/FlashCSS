@@ -24,7 +24,7 @@
     flex-basis: calc((#{$i} / #{$flash-grid-size}) * 99%);
     border: 1px solid black;
     padding: 1% 1%;
-    @media (max-width: 720px) {
+    @include mobile-sm {
       background-color: #0FA0CE;
       flex-basis: 100%;
     }
