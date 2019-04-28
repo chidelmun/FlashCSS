@@ -399,6 +399,10 @@ th {
   padding: 0;
 }
 
+.flash-text-center {
+  text-align: center;
+}
+
 .flash-hidden\@s {
   display: none;
 }
@@ -415,6 +419,9 @@ flash-hidden\@l {
   min-height: 10em;
   background: tan;
   padding: 0.4em 0.4em;
+}
+.flash-section.flash-text-center {
+  text-align: center !important;
 }
 
 [flash-container],
