@@ -452,16 +452,22 @@ th {
     transform: scale(1);
   }
 }
-.flash-hidden\@s {
-  display: none !important;
+@media (max-width: 720px) {
+  .flash-hide\@sm {
+    display: none !important;
+  }
 }
 
-flash-hidden\@m {
-  display: none;
+@media (max-width: 960px) {
+  .flash-hide\@md {
+    display: none !important;
+  }
 }
 
-flash-hidden\@l {
-  display: none;
+@media (max-width: 1200px) {
+  .flash-hide\@lg {
+    display: none !important;
+  }
 }
 
 .flash-section {
