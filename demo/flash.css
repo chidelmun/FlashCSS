@@ -409,7 +409,7 @@ th {
   background: transparent;
   justify-content: space-evenly;
 }
-@media (max-width: 720px) {
+@media (max-width: 480px) {
   .button-group {
     flex-direction: column;
     align-items: center;
@@ -628,6 +628,13 @@ button:active, .flash-button:active {
   min-height: 3.5em;
   justify-content: flex-start;
   align-items: center;
+}
+@media (max-width: 720px) {
+  .navbar,
+[narbar] {
+    justify-content: center;
+    background: red;
+  }
 }
 .navbar .navbar-item,
 [narbar] .navbar-item {

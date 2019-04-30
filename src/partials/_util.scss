@@ -10,7 +10,7 @@
   background: transparent;
   justify-content: space-evenly;
 
-  @media (max-width: $breakpoint-sm) {
+  @media (max-width: $breakpoint-xs) {
     flex-direction: column;
     align-items: center;
   }
