@@ -38,6 +38,22 @@
   animation: flash-zoom-out 1s;
 }
 
+.\@-slide-right {
+  animation: flash-slide-in-right 1s;
+}
+
+.\@-slide-left {
+  animation: flash-slide-in-left 1s;
+}
+
+.\@-slide-in-top {
+  animation: flash-in-top 1s;
+}
+
+.\@-slide-in-bottom {
+  animation: flash-in-bottom 1s;
+}
+
 
 @keyframes flash-zoom-out {
   0%{
@@ -55,5 +71,50 @@
 
   100%{
     transform: scale(1);
+  }
+}
+
+@keyframes flash-slide-in-right {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+@keyframes flash-in-left {
+  from {
+    margin-left: -100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+@keyframes flash-in-top {
+  from {
+    position: relative;
+    margin-top: -20%;
+  }
+
+  to {
+
+  }
+}
+
+@keyframes flash-in-bottom {
+  from {
+    margin-bottom: -20%;
+  }
+
+  to {
+    //margin-top: 100%;
   }
 }
