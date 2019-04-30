@@ -17,12 +17,13 @@
 }
 
 .flash-primary-bg{
-  background: $global-primary-color;
+  background: $global-primary-color !important;
+  color: #fff !important;
 }
 
 .flash-secondary-bg {
-  background: $global-secondary-color;
-  color: #fff;
+  background: $global-secondary-color !important;
+  color: #fff !important;
 }
 
 

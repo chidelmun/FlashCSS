@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  background: #f9fbfb;
+  background: #fff;
   position: initial;
   width: 100%;
   margin: 0 auto;
@@ -24,6 +24,7 @@
     flex-basis: calc((#{$i} / #{$flash-grid-size}) * 99%);
     border: 1px solid black;
     padding: 1% 1%;
+    color: #000;
     @include mobile-sm {
       background-color: #0FA0CE;
       flex-basis: 100%;

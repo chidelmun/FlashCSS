@@ -417,12 +417,13 @@ th {
 }
 
 .flash-primary-bg {
-  background: #0FA0CE;
+  background: #0FA0CE !important;
+  color: #fff !important;
 }
 
 .flash-secondary-bg {
-  background: #ce822e;
-  color: #fff;
+  background: #ce822e !important;
+  color: #fff !important;
 }
 
 /*
@@ -533,7 +534,7 @@ th {
   text-align: center !important;
 }
 .flash-section.flash-section-large {
-  height: 80vh;
+  height: 85vh;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -564,7 +565,7 @@ button:active, .flash-button:active {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  background: #f9fbfb;
+  background: #fff;
   position: initial;
   width: 100%;
   margin: 0 auto;
@@ -586,6 +587,7 @@ button:active, .flash-button:active {
   flex-basis: calc((1 / 6) * 99%);
   border: 1px solid black;
   padding: 1% 1%;
+  color: #000;
 }
 @media only screen and (max-width: 720px) {
   .column-1-6, column-1 {
@@ -598,6 +600,7 @@ button:active, .flash-button:active {
   flex-basis: calc((2 / 6) * 99%);
   border: 1px solid black;
   padding: 1% 1%;
+  color: #000;
 }
 @media only screen and (max-width: 720px) {
   .column-2-6, column-2 {
@@ -610,6 +613,7 @@ button:active, .flash-button:active {
   flex-basis: calc((3 / 6) * 99%);
   border: 1px solid black;
   padding: 1% 1%;
+  color: #000;
 }
 @media only screen and (max-width: 720px) {
   .column-3-6, column-3 {
@@ -622,6 +626,7 @@ button:active, .flash-button:active {
   flex-basis: calc((4 / 6) * 99%);
   border: 1px solid black;
   padding: 1% 1%;
+  color: #000;
 }
 @media only screen and (max-width: 720px) {
   .column-4-6, column-4 {
@@ -634,6 +639,7 @@ button:active, .flash-button:active {
   flex-basis: calc((5 / 6) * 99%);
   border: 1px solid black;
   padding: 1% 1%;
+  color: #000;
 }
 @media only screen and (max-width: 720px) {
   .column-5-6, column-5 {
@@ -646,6 +652,7 @@ button:active, .flash-button:active {
   flex-basis: calc((6 / 6) * 99%);
   border: 1px solid black;
   padding: 1% 1%;
+  color: #000;
 }
 @media only screen and (max-width: 720px) {
   .column-6-6, column-6 {
