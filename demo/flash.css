@@ -1,3 +1,6 @@
+/*
+  *  Breakponts
+ */
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 /**
  * 1. Set default font family to sans-serif.
@@ -17,7 +20,7 @@ html {
  * Remove default margin.
  */
 body {
-  margin: 0 0.5em;
+  margin: 0 auto;
 }
 
 /* HTML5 display definitions
@@ -227,7 +230,6 @@ samp {
  * 2. Correct font properties not being inherited.
  * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
  */
-button,
 input,
 optgroup,
 select,
@@ -243,19 +245,13 @@ textarea {
 /**
  * Address `overflow` set to `hidden` in IE 8/9/10/11.
  */
-button {
-  overflow: visible;
-  min-width: 6em;
-  min-height: 2em;
-}
-
 /**
  * Address inconsistent `text-transform` inheritance for `button` and `select`.
  * All other form control elements do not inherit `text-transform` values.
  * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
  * Correct `select` style inheritance in Firefox.
  */
-button,
+button, .flash-button,
 select {
   text-transform: none;
 }
@@ -267,7 +263,7 @@ select {
  * 3. Improve usability and consistency of cursor style between image-type
  *    `input` and others.
  */
-button,
+button, .flash-button,
 html input[type=button],
 input[type=reset],
 input[type=submit] {
@@ -280,7 +276,7 @@ input[type=submit] {
 /**
  * Re-set default cursor for disabled elements.
  */
-button[disabled],
+button[disabled], [disabled].flash-button,
 html input[disabled] {
   cursor: default;
 }
@@ -288,7 +284,7 @@ html input[disabled] {
 /**
  * Remove inner padding and border in Firefox 4+.
  */
-button::-moz-focus-inner,
+button::-moz-focus-inner, .flash-button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
   padding: 0;
@@ -405,6 +401,57 @@ th {
   text-align: center;
 }
 
+.button-group {
+  display: flex;
+  flex-direction: row;
+  padding: 20px 20px;
+  min-width: 27em;
+  background: transparent;
+  justify-content: space-evenly;
+}
+@media (max-width: 720px) {
+  .button-group {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.flash-primary-bg {
+  background: #0FA0CE;
+}
+
+.flash-secondary-bg {
+  background: #ce822e;
+  color: #fff;
+}
+
+/*
+* Animations
+*/
+.\@-flash-out {
+  animation: flash-zoom-out 1s;
+}
+
+.\@-flash-out {
+  animation: flash-zoom-out 1s;
+}
+
+@keyframes flash-zoom-out {
+  0% {
+    transform: scale(0.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes flash-zoom-in {
+  0% {
+    transform: scale(2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 .flash-hidden\@s {
   display: none !important;
 }
@@ -419,15 +466,44 @@ flash-hidden\@l {
 
 .flash-section {
   min-height: 10em;
-  background: tan;
+  background: transparent;
   padding: 0.4em 0.4em;
+}
+.flash-section.flash-section-primary {
+  background: #0FA0CE;
+}
+.flash-section.flash-section-secondary {
+  background: #ce822e;
+  color: white;
 }
 .flash-section.flash-text-center {
   text-align: center !important;
 }
+.flash-section.flash-section-large {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+button, .flash-button {
+  overflow: visible;
+  width: 10em;
+  height: 2.5em;
+  font-size: 1em;
+}
+button:active, .flash-button:active {
+  border: none;
+}
 
 .flash-button.flash-primary-button {
-  background: white;
+  background: #0FA0CE !important;
+}
+.flash-button.flash-secondary-button {
+  background: #ce822e;
+  color: white;
 }
 
 [flash-container],

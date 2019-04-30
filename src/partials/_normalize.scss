@@ -17,7 +17,7 @@ html {
  */
 
 body {
-  margin: 0 0.5em;
+  margin: 0 auto;
 }
 
 /* HTML5 display definitions
@@ -252,7 +252,6 @@ samp {
  * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
  */
 
-button,
 input,
 optgroup,
 select,
@@ -266,11 +265,6 @@ textarea {
  * Address `overflow` set to `hidden` in IE 8/9/10/11.
  */
 
-button {
-  overflow: visible;
-  min-width: 6em;
-  min-height: 2em;
-}
 
 /**
  * Address inconsistent `text-transform` inheritance for `button` and `select`.

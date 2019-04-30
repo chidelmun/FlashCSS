@@ -1,9 +1,24 @@
 .flash-section {
   min-height: 10em;
-  background: tan;
+  background: transparent;
   padding: 0.4em 0.4em;
+  &.flash-section-primary {
+    background: $global-primary-color;
+  }
+  &.flash-section-secondary {
+    background: $global-secondary-color;
+    color: white;
+  }
 
   &.flash-text-center {
     text-align: center !important;
+  }
+  &.flash-section-large {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
   }
 }

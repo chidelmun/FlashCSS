@@ -1,5 +1,5 @@
 @mixin mobile-sm {
-  @media only screen and (max-width:  $flash-breakpooint-sm)  {
+  @media only screen and (max-width:  $breakpoint-sm)  {
     @content;
   }
 }

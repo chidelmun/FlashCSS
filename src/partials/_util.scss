@@ -1,3 +1,59 @@
 .flash-text-center {
   text-align: center;
 }
+
+.button-group {
+  display: flex;
+  flex-direction: row;
+  padding: 20px 20px;
+  min-width: 27em;
+  background: transparent;
+  justify-content: space-evenly;
+
+  @media (max-width: $breakpoint-sm) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.flash-primary-bg{
+  background: $global-primary-color;
+}
+
+.flash-secondary-bg {
+  background: $global-secondary-color;
+  color: #fff;
+}
+
+
+/*
+* Animations
+*/
+
+.\@-flash-out {
+  animation: flash-zoom-out 1s;
+}
+
+.\@-flash-out {
+  animation: flash-zoom-out 1s;
+}
+
+
+@keyframes flash-zoom-out {
+  0%{
+    transform: scale(0.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes flash-zoom-in {
+  0%{
+    transform: scale(2.0);
+  }
+
+  100%{
+    transform: scale(1);
+  }
+}

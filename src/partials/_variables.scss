@@ -1,12 +1,22 @@
 $flash-primary-color: lighten(lightblue, 60%) !default;
 $flash-grid-size: 6  !default;
-$global-dark-background:                                     black;
-$global-navbar-max-height:                                   4.5em;
-$global-navbar-min-height:                                   3.5em;
-$global-navbar-item-spacing:                                 5%;
-$global-primary-color:                                       #0FA0CE;
-$global-secondary-color:                                     #ce822e;
-$global-danger-color:                                        #0FA0CE;
-$global-warning-color:                                       #0FA0CE;
-$global-info-color:                                          #0FA0CE;
-$flash-breakpooint-sm:                                       720px;
+$global-dark-background:                                     black !default;
+$global-navbar-max-height:                                   4.5em !default;;
+$global-navbar-min-height:                                   3.5em !default;;
+$global-navbar-item-spacing:                                 5% !default;;
+$global-primary-color:                                       #0FA0CE !default;;
+$global-secondary-color:                                     #ce822e !default;;
+$global-danger-color:                                        #0FA0CE !default;;
+$global-warning-color:                                       #0FA0CE !default;;
+$global-info-color:                                          #0FA0CE !default;;
+$flash-breakpooint-sm:                                       720px !default;;
+
+
+/*
+  *  Breakponts
+ */
+
+$breakpoint-sm:                              720px !default;
+$breakpoint-md:                             960px !default;
+$breakpoint-lg:                              1200px !default;
+$breakpoint-xl:                             1600px !default;

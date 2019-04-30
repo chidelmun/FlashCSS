@@ -1,5 +1,24 @@
+$flash-primary-color: $global-primary-color;
+$flash-secondary-color: $global-secondary-color;
+
+button {
+  overflow: visible;
+  width: 10em;
+  height: 2.5em;
+  font-size: 1em;
+  &:active{
+    border: none;
+  }
+}
+
 .flash-button{
+  @extend button;
   &.flash-primary-button {
-    background: $flash-primary-color;
+    background: $flash-primary-color !important;
+  }
+
+  &.flash-secondary-button{
+    background: $flash-secondary-color;
+    color: white;
   }
 }
