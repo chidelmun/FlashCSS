@@ -417,6 +417,9 @@ input[type=button].flash-button-large {
   color: white;
   border: 1px solid #fff;
 }
+.flash-button.flash-secondary-button:hover {
+  background: #000;
+}
 .flash-button.flash-warning-button {
   background: #ce3165 !important;
   color: white;
