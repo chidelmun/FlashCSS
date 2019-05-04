@@ -14,11 +14,14 @@
     text-align: center !important;
   }
   &.flash-section-large {
-    height: 85vh;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     align-items: center;
     justify-content: center;
+    @media (min-width: $breakpoint-lg) {
+      height: 85vh;
+    }
   }
+
 }

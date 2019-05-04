@@ -2,13 +2,28 @@ $flash-primary-color: $global-primary-color;
 $flash-secondary-color: $global-secondary-color;
 
 button {
+  --button-base-width: 10em;
+  --button-base-height: 2.5em;
+  --button-scale: 1;
+  --button-font-size: 1em;
   overflow: visible;
-  width: 10em;
-  height: 2.5em;
-  font-size: 1em;
-  &:active{
+  width: calc(var( --button-base-width) * var(--button-scale));
+  height: calc( var( --button-base-height) * var(--button-scale));
+  font-size: var(--button-font-size);
+  border: inherit;
+  &:focus{
     border: none;
+    outline-width: 0;
   }
+  &:hover{
+    border: 1px solid #fff;
+  }
+
+  @media (max-width: $breakpoint-xs) {
+    --button-base-width: 12em;
+    --button-scale: 1.2 !important;
+  }
+
 }
 
 .flash-button{
@@ -20,5 +35,6 @@ button {
   &.flash-secondary-button{
     background: $flash-secondary-color;
     color: white;
+    border: 1px solid #fff;
   }
 }
