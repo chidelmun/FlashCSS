@@ -81,7 +81,7 @@ a {
 }
 
 button, .flash-button,
-html input[type=button],
+input[type=button],
 input[type=reset],
 input[type=submit] {
   cursor: pointer;
@@ -197,6 +197,64 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: -20%;
   }
 }
+input[type=email],
+input[type=number],
+input[type=search],
+input[type=text],
+input[type=tel],
+input[type=url],
+input[type=password],
+select {
+  padding: 6px 10px;
+  border: 1px solid #D1D1D1;
+  border-radius: 4px;
+  box-shadow: none;
+  box-sizing: border-box;
+  min-width: 20em;
+  height: 2em;
+  font-size: inherit;
+}
+input[type=email]:focus,
+input[type=number]:focus,
+input[type=search]:focus,
+input[type=text]:focus,
+input[type=tel]:focus,
+input[type=url]:focus,
+input[type=password]:focus,
+select:focus {
+  border: 1px solid #33C3F0;
+  outline: 0;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+fieldset {
+  padding: 0;
+  border-width: 0;
+}
+
+input[type=checkbox],
+input[type=radio] {
+  display: inline;
+}
+
+textarea {
+  min-height: 65px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+form.flash-form-inline,
+flash-form.flash-form-inline {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+
 @media (max-width: 720px) {
   .flash-hide\@sm {
     display: none !important;
