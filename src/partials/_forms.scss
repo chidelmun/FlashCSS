@@ -14,40 +14,47 @@ select {
   min-width: 20em;
   height: 2em;
   font-size: inherit;
-  &:focus{
+
+  &:focus {
     border: 1px solid #33C3F0;
     outline: 0;
   }
-}
 
-label{
-  display: block;
-  margin-bottom: .5rem;
-  font-weight: 600;
-}
+  &.flash-bare-input {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+  }
 
-fieldset {
-  padding: 0;
-  border-width: 0;
-}
+  label {
+    display: block;
+    margin-bottom: .5rem;
+    font-weight: 600;
+  }
 
-input[type="checkbox"],
-input[type="radio"] {
-  display: inline;
-}
+  fieldset {
+    padding: 0;
+    border-width: 0;
+  }
+
+  input[type="checkbox"],
+  input[type="radio"] {
+    display: inline;
+  }
 
 
-textarea {
-  min-height: 65px;
-  padding-top: 6px;
-  padding-bottom: 6px;
-}
+  textarea {
+    min-height: 65px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+  }
 
-form,
-flash-form{
-  &.flash-form-inline {
-    display: flex;
-    flex-direction: row;
-    align-items: baseline;
+  form,
+  flash-form {
+    &.flash-form-inline {
+      display: flex;
+      flex-direction: row;
+      align-items: baseline;
+    }
   }
 }
