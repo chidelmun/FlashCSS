@@ -243,29 +243,56 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-button, .flash-button {
+button, .flash-button,
+input[type=submit],
+input[type=reset],
+input[type=button] {
   --button-base-width: 10em;
   --button-base-height: 2.5em;
   --button-scale: 1;
   --button-font-size: 1em;
   overflow: visible;
-  width: calc(var( --button-base-width) * var(--button-scale));
   height: calc( var( --button-base-height) * var(--button-scale));
+  min-width: var(--button-base-width);
   font-size: var(--button-font-size);
   border: inherit;
+  padding: 0 30px;
+  text-align: center;
+  line-height: 38px;
+  letter-spacing: 0.1rem;
+  text-decoration: none;
+  white-space: nowrap;
+  border-radius: 4px;
+  box-sizing: border-box;
 }
-button:focus, .flash-button:focus {
+button:focus, .flash-button:focus,
+input[type=submit]:focus,
+input[type=reset]:focus,
+input[type=button]:focus {
   border: none;
   outline-width: 0;
 }
-button:hover, .flash-button:hover {
+button:hover, .flash-button:hover,
+input[type=submit]:hover,
+input[type=reset]:hover,
+input[type=button]:hover {
   border: 1px solid #fff;
 }
 @media (max-width: 480px) {
-  button, .flash-button {
+  button, .flash-button,
+input[type=submit],
+input[type=reset],
+input[type=button] {
     --button-base-width: 12em;
     --button-scale: 1.2 !important;
   }
+}
+button.flash-button-large, .flash-button-large.flash-button,
+input[type=submit].flash-button-large,
+input[type=reset].flash-button-large,
+input[type=button].flash-button-large {
+  --button-base-width: 15rem;
+  --button-base-height: 3em;
 }
 
 .flash-button.flash-primary-button {
@@ -275,6 +302,14 @@ button:hover, .flash-button:hover {
   background: #ce822e;
   color: white;
   border: 1px solid #fff;
+}
+.flash-button.flash-warning-button {
+  background: #ce3165 !important;
+  color: white;
+}
+.flash-button.flash-info-button {
+  background: #32ce37 !important;
+  color: white;
 }
 
 [flash-container],
@@ -439,15 +474,15 @@ button:hover, .flash-button:hover {
 }
 .navbar.flash-bg-danger,
 [narbar].flash-bg-danger {
-  background: #0FA0CE;
+  background: #ff0000;
 }
 .navbar.flash-bg-warning,
 [narbar].flash-bg-warning {
-  background: #0FA0CE;
+  background: #ce3165;
 }
 .navbar.flash-bg-info,
 [narbar].flash-bg-info {
-  background: #0FA0CE;
+  background: #32ce37;
 }
 .navbar.flash-navbar-fixed,
 [narbar].flash-navbar-fixed {
