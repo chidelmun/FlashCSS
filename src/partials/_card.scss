@@ -1,9 +1,14 @@
 .flash-card, [flash-card] {
-  min-width: 284px;
-  min-height: 284px;
-  max-width: 100%;
+  //min-width: 284px !important;
+  min-height: 284px !important;
+  max-width: 450px;
   padding: 10px 10px 20px 10px;
   border: 1px solid #BFBFBF;
   background-color: white;
-  box-shadow: 10px 10px 5px #aaaaaa;
+  &.flash-card-primary{
+    background: $global-primary-color;
+  }
+  &.flash-card-shadow{
+    box-shadow: 5px 5px 5px #aaaaaa;
+  }
 }

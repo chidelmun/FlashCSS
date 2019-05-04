@@ -472,13 +472,17 @@ input[type=button].flash-button-large {
 }
 
 .flash-card, [flash-card] {
-  min-width: 284px;
-  min-height: 284px;
-  max-width: 100%;
+  min-height: 284px !important;
+  max-width: 450px;
   padding: 10px 10px 20px 10px;
   border: 1px solid #BFBFBF;
   background-color: white;
-  box-shadow: 10px 10px 5px #aaaaaa;
+}
+.flash-card.flash-card-primary, [flash-card].flash-card-primary {
+  background: #0FA0CE;
+}
+.flash-card.flash-card-shadow, [flash-card].flash-card-shadow {
+  box-shadow: 5px 5px 5px #aaaaaa;
 }
 
 .navbar,
@@ -533,6 +537,10 @@ input[type=button].flash-button-large {
 .navbar.flash-bg-danger,
 [narbar].flash-bg-danger {
   background: #ff0000;
+}
+.navbar.flash-bg-dark,
+[narbar].flash-bg-dark {
+  background: black;
 }
 .navbar.flash-bg-warning,
 [narbar].flash-bg-warning {

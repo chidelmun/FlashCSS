@@ -50,6 +50,9 @@ $navbar-item-spacing:                            $global-navbar-item-spacing !de
   &.flash-bg-danger {
     background: $global-danger-color;
   }
+  &.flash-bg-dark {
+    background: $global-dark-background;
+  }
 
   &.flash-bg-warning {
     background: $global-warning-color;
