@@ -1,3 +1,6 @@
+/**
+* Global variables
+ */
 /*
   *  Breakponts
  */
@@ -91,6 +94,11 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: 2rem;
   font-weight: 300;
+}
+
+code {
+  font-size: 1.2em;
+  color: brown;
 }
 
 .flash-text-center {
@@ -464,7 +472,7 @@ input[type=button].flash-button-large {
 
 .column-1-6, column-1 {
   flex-basis: calc((1 / 6) * 99%);
-  border: 1px solid black;
+  border: 1px solid #34aae4;
   padding: 1% 1%;
   color: #000;
 }
@@ -477,7 +485,7 @@ input[type=button].flash-button-large {
 
 .column-2-6, column-2 {
   flex-basis: calc((2 / 6) * 99%);
-  border: 1px solid black;
+  border: 1px solid #34aae4;
   padding: 1% 1%;
   color: #000;
 }
@@ -490,7 +498,7 @@ input[type=button].flash-button-large {
 
 .column-3-6, column-3 {
   flex-basis: calc((3 / 6) * 99%);
-  border: 1px solid black;
+  border: 1px solid #34aae4;
   padding: 1% 1%;
   color: #000;
 }
@@ -503,7 +511,7 @@ input[type=button].flash-button-large {
 
 .column-4-6, column-4 {
   flex-basis: calc((4 / 6) * 99%);
-  border: 1px solid black;
+  border: 1px solid #34aae4;
   padding: 1% 1%;
   color: #000;
 }
@@ -516,7 +524,7 @@ input[type=button].flash-button-large {
 
 .column-5-6, column-5 {
   flex-basis: calc((5 / 6) * 99%);
-  border: 1px solid black;
+  border: 1px solid #34aae4;
   padding: 1% 1%;
   color: #000;
 }
@@ -529,7 +537,7 @@ input[type=button].flash-button-large {
 
 .column-6-6, column-6 {
   flex-basis: calc((6 / 6) * 99%);
-  border: 1px solid black;
+  border: 1px solid #34aae4;
   padding: 1% 1%;
   color: #000;
 }
@@ -578,6 +586,12 @@ input[type=button].flash-button-large {
   flex-basis: 5%;
   padding: 0 10px;
   white-space: nowrap;
+}
+@media (max-width: 480px) {
+  .navbar .navbar-item,
+[narbar] .navbar-item {
+    display: none;
+  }
 }
 .navbar.navbar-right,
 [narbar].navbar-right {

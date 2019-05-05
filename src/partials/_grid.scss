@@ -22,7 +22,7 @@
 @for  $i from 1 through $flash-grid-size {
   .column-#{$i}-#{$flash-grid-size}, column-#{$i} {
     flex-basis: calc((#{$i} / #{$flash-grid-size}) * 99%);
-    border: 1px solid black;
+    border: 1px solid #34aae4;
     padding: 1% 1%;
     color: #000;
     @include mobile-sm {

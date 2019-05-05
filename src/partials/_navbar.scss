@@ -23,6 +23,10 @@ $navbar-item-spacing:                            $global-navbar-item-spacing !de
     flex-basis: 5%;
     padding: 0 10px;
     white-space: nowrap;
+    @media (max-width: $breakpoint-xs) {
+      display: none;
+    }
+
   }
 
   &.navbar-right {
