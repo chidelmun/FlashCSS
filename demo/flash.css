@@ -237,6 +237,16 @@ select.flash-bare-input {
   border-left: none;
   border-right: none;
 }
+input[type=email].flash-bare-input:focus,
+input[type=number].flash-bare-input:focus,
+input[type=search].flash-bare-input:focus,
+input[type=text].flash-bare-input:focus,
+input[type=tel].flash-bare-input:focus,
+input[type=url].flash-bare-input:focus,
+input[type=password].flash-bare-input:focus,
+select.flash-bare-input:focus {
+  transform: scale(1.1);
+}
 input[type=email] label,
 input[type=number] label,
 input[type=search] label,

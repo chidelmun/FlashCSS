@@ -24,6 +24,9 @@ select {
     border-top: none;
     border-left: none;
     border-right: none;
+    &:focus{
+      transform: scale(1.1);
+    }
   }
 
   label {
