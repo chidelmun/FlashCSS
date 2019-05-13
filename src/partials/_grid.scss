@@ -29,5 +29,8 @@
     @include mobile-sm {
       flex-basis: 100%;
     }
+    &.flash-column-bare {
+      border: none;
+    }
   }
 }

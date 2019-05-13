@@ -99,6 +99,7 @@ h1, h2, h3, h4, h5, h6 {
 code {
   font-size: 1.2em;
   color: brown;
+  background: none;
 }
 
 .flash-text-center {
@@ -481,6 +482,9 @@ input[type=button].flash-button-large {
     flex-basis: 100%;
   }
 }
+.column-1-6.flash-column-bare, column-1.flash-column-bare {
+  border: none;
+}
 
 .column-2-6, column-2 {
   flex-basis: calc((2 / 6) * 99%);
@@ -492,6 +496,9 @@ input[type=button].flash-button-large {
   .column-2-6, column-2 {
     flex-basis: 100%;
   }
+}
+.column-2-6.flash-column-bare, column-2.flash-column-bare {
+  border: none;
 }
 
 .column-3-6, column-3 {
@@ -505,6 +512,9 @@ input[type=button].flash-button-large {
     flex-basis: 100%;
   }
 }
+.column-3-6.flash-column-bare, column-3.flash-column-bare {
+  border: none;
+}
 
 .column-4-6, column-4 {
   flex-basis: calc((4 / 6) * 99%);
@@ -516,6 +526,9 @@ input[type=button].flash-button-large {
   .column-4-6, column-4 {
     flex-basis: 100%;
   }
+}
+.column-4-6.flash-column-bare, column-4.flash-column-bare {
+  border: none;
 }
 
 .column-5-6, column-5 {
@@ -529,6 +542,9 @@ input[type=button].flash-button-large {
     flex-basis: 100%;
   }
 }
+.column-5-6.flash-column-bare, column-5.flash-column-bare {
+  border: none;
+}
 
 .column-6-6, column-6 {
   flex-basis: calc((6 / 6) * 99%);
@@ -540,6 +556,9 @@ input[type=button].flash-button-large {
   .column-6-6, column-6 {
     flex-basis: 100%;
   }
+}
+.column-6-6.flash-column-bare, column-6.flash-column-bare {
+  border: none;
 }
 
 .flash-card, [flash-card] {
