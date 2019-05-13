@@ -474,11 +474,10 @@ input[type=button].flash-button-large {
   flex-basis: calc((1 / 6) * 99%);
   border: 1px solid #34aae4;
   padding: 1% 1%;
-  color: #000;
+  color: black;
 }
 @media only screen and (max-width: 720px) {
   .column-1-6, column-1 {
-    background-color: #0FA0CE;
     flex-basis: 100%;
   }
 }
@@ -487,11 +486,10 @@ input[type=button].flash-button-large {
   flex-basis: calc((2 / 6) * 99%);
   border: 1px solid #34aae4;
   padding: 1% 1%;
-  color: #000;
+  color: black;
 }
 @media only screen and (max-width: 720px) {
   .column-2-6, column-2 {
-    background-color: #0FA0CE;
     flex-basis: 100%;
   }
 }
@@ -500,11 +498,10 @@ input[type=button].flash-button-large {
   flex-basis: calc((3 / 6) * 99%);
   border: 1px solid #34aae4;
   padding: 1% 1%;
-  color: #000;
+  color: black;
 }
 @media only screen and (max-width: 720px) {
   .column-3-6, column-3 {
-    background-color: #0FA0CE;
     flex-basis: 100%;
   }
 }
@@ -513,11 +510,10 @@ input[type=button].flash-button-large {
   flex-basis: calc((4 / 6) * 99%);
   border: 1px solid #34aae4;
   padding: 1% 1%;
-  color: #000;
+  color: black;
 }
 @media only screen and (max-width: 720px) {
   .column-4-6, column-4 {
-    background-color: #0FA0CE;
     flex-basis: 100%;
   }
 }
@@ -526,11 +522,10 @@ input[type=button].flash-button-large {
   flex-basis: calc((5 / 6) * 99%);
   border: 1px solid #34aae4;
   padding: 1% 1%;
-  color: #000;
+  color: black;
 }
 @media only screen and (max-width: 720px) {
   .column-5-6, column-5 {
-    background-color: #0FA0CE;
     flex-basis: 100%;
   }
 }
@@ -539,11 +534,10 @@ input[type=button].flash-button-large {
   flex-basis: calc((6 / 6) * 99%);
   border: 1px solid #34aae4;
   padding: 1% 1%;
-  color: #000;
+  color: black;
 }
 @media only screen and (max-width: 720px) {
   .column-6-6, column-6 {
-    background-color: #0FA0CE;
     flex-basis: 100%;
   }
 }
@@ -558,8 +552,21 @@ input[type=button].flash-button-large {
 .flash-card.flash-card-primary, [flash-card].flash-card-primary {
   background: #0FA0CE;
 }
+.flash-card.flash-card-secondary, [flash-card].flash-card-secondary {
+  background: #ce822e;
+}
+.flash-card.flash-card-info, [flash-card].flash-card-info {
+  background: #32ce37;
+}
+.flash-card.flash-card-warning, [flash-card].flash-card-warning {
+  background: #ce3165;
+}
 .flash-card.flash-card-shadow, [flash-card].flash-card-shadow {
   box-shadow: 5px 5px 5px #aaaaaa;
+}
+.flash-card.flash-message-card, [flash-card].flash-message-card {
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 61% 76%, 50% 98%, 38% 75%, 0% 75%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 61% 76%, 50% 98%, 38% 75%, 0% 75%);
 }
 
 .navbar,

@@ -8,7 +8,20 @@
   &.flash-card-primary{
     background: $global-primary-color;
   }
+  &.flash-card-secondary{
+    background: $global-secondary-color;
+  }
+  &.flash-card-info{
+    background: $global-info-color;
+  }
+  &.flash-card-warning{
+    background: $global-warning-color;
+  }
   &.flash-card-shadow{
     box-shadow: 5px 5px 5px #aaaaaa;
+  }
+  &.flash-message-card {
+    -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 61% 76%, 50% 98%, 38% 75%, 0% 75%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 61% 76%, 50% 98%, 38% 75%, 0% 75%);
   }
 }

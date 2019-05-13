@@ -24,9 +24,9 @@
     flex-basis: calc((#{$i} / #{$flash-grid-size}) * 99%);
     border: 1px solid #34aae4;
     padding: 1% 1%;
-    color: #000;
+    color: $global-dark-background;
+    // background: #f7f7f7;
     @include mobile-sm {
-      background-color: #0FA0CE;
       flex-basis: 100%;
     }
   }
