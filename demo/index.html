@@ -118,14 +118,112 @@
 
 <section class="flash-section">
     <h5> Typography</h5>
+    <div class="flash-container">
+        <div class="column-3-6 flash-column-bare">
+            <h6>Description</h6>
+            <p>Type  in FlashCSS is all set with <code>ems</code>, so font-sizes and spacial relationships can be responsively scaled based on  their container font-size property.</p>
+            <code>
+                &lt;h1 class="flash-text-primary" &gt;Heading 1&lt;/h1&gt; <br>
+                &lt; class="flash-text-secondary"h2&gt;Heading 2&lt;/h2&gt;<br>
+                &lt; class="flash-text-info"h3&gt;Heading 3&lt;/h3&gt;<br>
+                &lt; class="flash-text-warning"h4&gt;Heading 4&lt;/h4&gt;<br>
+                &lt; class="flash-text-primary"h5&gt;Heading 5&lt;/h5&gt;<br>
+                &lt; class="flash-text-primary"h6&gt;Heading 6&lt;/h6&gt;<br>
+                &lt; p&gt;Paragraph&lt;/p&gt;<br>
+            </code>
+            <h6>Classes</h6>
+            <p> Theme classes can also be applied to set color of text</p>
+            <code>
+                .flash-text-primary <br>
+                .flash-text-secondary <br>
+                .flash-text-info <br>
+                .flash-text-warning <br>
+            </code>
+        </div>
+        <div class="column-3-6 flash-column-bare">
+            <h1 class="flash-text-primary"> Heading 1</h1>
+            <h2 class="flash-text-secondary"> Heading 2</h2>
+            <h3 class="flash-text-info"> Heading 3</h3>
+            <h4 class="flash-text-warning"> Heading 4</h4>
+            <h5 class="flash-text-primary"> Heading 5</h5>
+            <h6 class="flash-text-primary"> Heading 6</h6>
+            <p> Paragraph</p>
+        </div>
+    </div>
 </section>
 
 <section class="flash-section">
     <h5> Navbars</h5>
+    <p>Flash provides utility classes for placing navigation bar itams on different positions. We currently have support for the 3 main positions below</p>
+    <div class="flash-container">
+        <div class="column-6-6 flash-column-bare">
+            <h6>Left Navbar</h6>
+            <img src="assets/left.png" alt="">
+        </div>
+        <br>
+        <div class="column-6-6 flash-column-bare">
+            <h6>Right Navbar</h6>
+            <img src="assets/right.png" alt="">
+        </div>
+        <br>
+        <div class="column-6-6 flash-column-bare">
+            <h6>Center Navbar</h6>
+            <img src="assets/center.png" alt="">
+        </div>
+    </div>
+    <div class="flash-container">
+        <div class="column-3-6 flash-column-bare">
+            <h6> Navbar utility classes</h6>
+            <p> Use the following classes to create positioned  navbars.</p>
+            <p> <code>.navbar</code>  declares a navigation bar </p><br>
+            <p> <code>.navbar-item</code>  declares a navigation bar item </p>
+            <h6> Theme specific classes</h6>
+            <p>  Use <code>.flash-bg-primary, .flash-bg-secondary, flash-bg-info, .flash-bg-warning </code>  in conjunction with <code>.navbar</code> to give the navbar the corresponding theme colors. </p>
+            <p> Please checkout the source for more classes that work with  the Navbar component</p>
+        </div>
+
+        <div class="column-3-6 flash-column-bare">
+            <h6>Code </h6>
+            <code>
+                &lt;nav class="navbar navbar-left flash-bg-primary"&gt;
+                    <span class="navbar-item">  <br> .. Navbar items .. <br></span>
+                &lt; /nav&gt;
+            </code>
+            <br> <br>
+            <code>
+                &lt;nav class="navbar navbar-right flash-bg-secondary"&gt;
+                <span class="navbar-item">  <br> ..  Navbar items .. <br></span>
+                &lt; /nav&gt;
+            </code>
+            <br> <br>
+            <code>
+                &lt;nav class="navbar navbar-center flash-bg-info"&gt;
+                <span class="navbar-item">  <br> ..  Navbar items .. <br></span>
+                &lt; /nav&gt;
+            </code>
+        </div>
+    </div>
 </section>
 
 <section class="flash-section ">
     <h5> Grid System</h5>
+    <div class="flash-container">
+        <div class="column-2-6">
+            <h6>Component</h6>
+            <p>Flash Ships with a 6 column responsive grid system.</p>
+            <h6> Usage </h6>
+            <p>Create a flash container to contain the grid columns</p>
+            <code> .flash-container</code>
+            <p>Add columns to the flash container using one of the defined column configurations</p>
+            <code>.column-1-6, .column-2-6, column-3-6, column-4-6, column-5-6, column-6-6</code>
+            <p> You can also use the shorthand classes to create the columns</p>
+            <code> .column-1, .column-2, .column-3, .column-4, .column-5, .column-6</code>
+        </div>
+        <div class="column-4-6">
+            <p>Demo</p>
+            <img src="assets/grid.png" alt="">
+        </div>
+    </div>
 </section>
 
 <section class="flash-section">
@@ -133,6 +231,8 @@
     <div class="flash-container">
         <div class="column-3-6 flash-column-bare">
             <h6>Components</h6>
+            <p> Flash provides a card component that can be styled with theme colors using card conjuction classes</p>
+
         </div>
 
         <div class="column-3-6 flash-column-bare">
@@ -157,56 +257,6 @@
     <h5> Animations</h5>
 </section>
 
-    <div class="flash-container">
-        <div class="column-1-6 flash-secondary-bg">
-            <h2> Col-1</h2>
-        </div>
-
-        <div class="column-5-6 ">
-            <h2>Col-5</h2>
-        </div>
-    </div>
-    <div class="flash-container">
-        <div class="column-3-6">
-            <h2>Col-3</h2>
-        </div>
-        <div class="column-3-6">
-            <h2> Col-3</h2>
-        </div>
-    </div>
-
-    <div flash-container>
-        <div class="column-2-6">
-            <h2>Col 2</h2>
-        </div>
-
-        <div class="column-4-6">
-            <h2> Col-4</h2>
-        </div>
-    </div>
-
-    <div class="flash-container">
-        <div class="column-2-6">
-            <h2>Col-2</h2>
-        </div>
-
-        <div class="column-2-6">
-            <h2>Col-2</h2>
-        </div>
-
-        <div class="column-2-6">
-            <h2>Col-2</h2>
-        </div>
-    </div>
-    <div class="column-6-6">
-        <h2>Col-6</h2>
-    </div>
-
-<div class="column-6-6">
-    <h2>Col-6-6</h2>
-</div>
-
-<br>
 <section class="flash-section">
     <h2>Left navbar</h2>
     <nav class="navbar navbar-left flash-bg-dark">

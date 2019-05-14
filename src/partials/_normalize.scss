@@ -24,14 +24,34 @@ input[type="submit"] {
 }
 
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, p {
   margin-top: 0;
   margin-bottom: 2rem;
   font-weight: 300;
+}
+
+.flash-text-primary {
+  color: $global-primary-color;
+}
+
+.flash-text-secondary {
+  color: $global-secondary-color;
+}
+
+.flash-text-info {
+  color: $global-info-color;
+}
+
+.flash-text-warning {
+  color: $global-warning-color;
 }
 
 code{
   font-size: 1.2em;
   color: brown;
   background: none;;
+}
+
+img {
+  width: 100%;
 }

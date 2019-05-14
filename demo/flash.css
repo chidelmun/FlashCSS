@@ -90,16 +90,36 @@ input[type=submit] {
   cursor: pointer;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, p {
   margin-top: 0;
   margin-bottom: 2rem;
   font-weight: 300;
+}
+
+.flash-text-primary {
+  color: #0FA0CE;
+}
+
+.flash-text-secondary {
+  color: #ce822e;
+}
+
+.flash-text-info {
+  color: #32ce37;
+}
+
+.flash-text-warning {
+  color: #ce3165;
 }
 
 code {
   font-size: 1.2em;
   color: brown;
   background: none;
+}
+
+img {
+  width: 100%;
 }
 
 .flash-text-center {
@@ -471,94 +491,118 @@ input[type=button].flash-button-large {
   font-size: 5em;
 }
 
-.column-1-6, column-1 {
+.column-1-6 {
   flex-basis: calc((1 / 6) * 99%);
   border: 1px solid #34aae4;
   padding: 1% 1%;
   color: black;
 }
 @media only screen and (max-width: 720px) {
-  .column-1-6, column-1 {
+  .column-1-6 {
     flex-basis: 100%;
   }
 }
-.column-1-6.flash-column-bare, column-1.flash-column-bare {
+.column-1-6.flash-column-bare {
   border: none;
 }
 
-.column-2-6, column-2 {
+.column-1 {
+  flex-basis: calc((6 / 1) * 99%);
+}
+
+.column-2-6 {
   flex-basis: calc((2 / 6) * 99%);
   border: 1px solid #34aae4;
   padding: 1% 1%;
   color: black;
 }
 @media only screen and (max-width: 720px) {
-  .column-2-6, column-2 {
+  .column-2-6 {
     flex-basis: 100%;
   }
 }
-.column-2-6.flash-column-bare, column-2.flash-column-bare {
+.column-2-6.flash-column-bare {
   border: none;
 }
 
-.column-3-6, column-3 {
+.column-2 {
+  flex-basis: calc((6 / 2) * 99%);
+}
+
+.column-3-6 {
   flex-basis: calc((3 / 6) * 99%);
   border: 1px solid #34aae4;
   padding: 1% 1%;
   color: black;
 }
 @media only screen and (max-width: 720px) {
-  .column-3-6, column-3 {
+  .column-3-6 {
     flex-basis: 100%;
   }
 }
-.column-3-6.flash-column-bare, column-3.flash-column-bare {
+.column-3-6.flash-column-bare {
   border: none;
 }
 
-.column-4-6, column-4 {
+.column-3 {
+  flex-basis: calc((6 / 3) * 99%);
+}
+
+.column-4-6 {
   flex-basis: calc((4 / 6) * 99%);
   border: 1px solid #34aae4;
   padding: 1% 1%;
   color: black;
 }
 @media only screen and (max-width: 720px) {
-  .column-4-6, column-4 {
+  .column-4-6 {
     flex-basis: 100%;
   }
 }
-.column-4-6.flash-column-bare, column-4.flash-column-bare {
+.column-4-6.flash-column-bare {
   border: none;
 }
 
-.column-5-6, column-5 {
+.column-4 {
+  flex-basis: calc((6 / 4) * 99%);
+}
+
+.column-5-6 {
   flex-basis: calc((5 / 6) * 99%);
   border: 1px solid #34aae4;
   padding: 1% 1%;
   color: black;
 }
 @media only screen and (max-width: 720px) {
-  .column-5-6, column-5 {
+  .column-5-6 {
     flex-basis: 100%;
   }
 }
-.column-5-6.flash-column-bare, column-5.flash-column-bare {
+.column-5-6.flash-column-bare {
   border: none;
 }
 
-.column-6-6, column-6 {
+.column-5 {
+  flex-basis: calc((6 / 5) * 99%);
+}
+
+.column-6-6 {
   flex-basis: calc((6 / 6) * 99%);
   border: 1px solid #34aae4;
   padding: 1% 1%;
   color: black;
 }
 @media only screen and (max-width: 720px) {
-  .column-6-6, column-6 {
+  .column-6-6 {
     flex-basis: 100%;
   }
 }
-.column-6-6.flash-column-bare, column-6.flash-column-bare {
+.column-6-6.flash-column-bare {
   border: none;
+}
+
+.column-6 {
+  flex-basis: calc((6 / 6) * 99%);
 }
 
 .flash-card, [flash-card] {
