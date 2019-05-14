@@ -227,22 +227,48 @@
 </section>
 
 <section class="flash-section">
-    <h5> Card </h5>
+    <h5> Cards </h5>
     <div class="flash-container">
         <div class="column-3-6 flash-column-bare">
             <h6>Components</h6>
             <p> Flash provides a card component that can be styled with theme colors using card conjuction classes</p>
+            <h6> <code> .flash-card </code></h6>
+            <div class="flash-card flash-card-primary flash-card-shadow">
+                <h2> Card</h2>
+            </div>
+            <br>
 
         </div>
 
         <div class="column-3-6 flash-column-bare">
-            <h6>Usage</h6>
+            <h6> Themes cards</h6>
+            <p>Use the <code> .flash-message-card</code> class in conjunction with <code>.flash-card</code> to create a message card component.
+                Use <code>.flash-card-[theme-color] to set background of card to appropriate theme.</code>
+            </p>
+            <h6><code>.flash-message-card</code></h6>
+            <div class="flash-card flash-card-secondary flash-card-shadow flash-message-card">
+                <h2> Message Card </h2>
+            </div>
         </div>
     </div>
 </section>
-
+<hr>
 <section class="flash-section ">
-    <h5> Section</h5>
+    <h4> Section</h4>
+    <div class="flash-container">
+        <div class="column-2">
+            <h6>Description</h6>
+            <p> Section is a container component used to create  aligned columns that follow the container layout</p>
+            <p>Use <code>.flash-section</code> to create a page section that occupies 100% of its container.</p>
+        </div>
+
+        <div class="column-2">
+            <h6> Classes</h6>
+            <p><code>.flash-section-primary</code>: Creates section with primary theme background</p>
+            <p><code> .flash-section-secondary</code> : Creates section with secondary theme background</p>
+            <p> <code>.flash-section-large</code>: Creates a larger section container</p>
+        </div>
+    </div>
 </section>
 
 <section class="flash-section ">
@@ -257,34 +283,7 @@
     <h5> Animations</h5>
 </section>
 
-<section class="flash-section">
-    <h2>Left navbar</h2>
-    <nav class="navbar navbar-left flash-bg-dark">
-        <a href="#" class="navbar-item"> Flash CSS</a>
-        <a href="#" class="navbar-item">Features </a>
-        <a href="#" class="navbar-item" > Documentation</a>
-        <a href="#" class="navbar-item"> Github </a>
-        <a href="#" class="navbar-item"> FAQ </a>
-    </nav>
-    <br>
-    <h2>Right Navbar</h2>
-    <nav class="navbar navbar-right flash-bg-dark">
-        <a href="#" class="navbar-item"> Flash CSS</a>
-        <a href="#" class="navbar-item">Features </a>
-        <a href="#" class="navbar-item" > Documentation</a>
-        <a href="#" class="navbar-item"> Github </a>
-        <a href="#" class="navbar-item"> FAQ </a>
-    </nav>
-    <br>
-    <h2>Center Navbar</h2>
-    <nav class="navbar navbar-center flash-bg-dark">
-        <a href="#" class="navbar-item"> Flash CSS</a>
-        <a href="#" class="navbar-item">Features </a>
-        <a href="#" class="navbar-item" > Documentation</a>
-        <a href="#" class="navbar-item"> Github </a>
-        <a href="#" class="navbar-item"> FAQ </a>
-    </nav>
-</section>
+
 <section class="flash-section">
     <h2> Forms</h2>
     <form action="" class="flash-form-inline" autocomplete="off">
@@ -304,34 +303,6 @@
         <label for="rem1"></label>
         <button class="flash-button flash-warning-button"> Login </button>
     </form>
-    <br>
-   <div class="flash-container">
-       <div class="column-3-6">
-           <div class="flash-card flash-card-primary flash-card-shadow">
-               <h5> Card</h5>
-           </div>
-       </div>
-
-       <div class="column-3-6">
-           <div class="flash-card flash-card-secondary flash-card-shadow flash-message-card">
-               <h2> Message</h2>
-           </div>
-       </div>
-
-   </div>
-</section>
-
-<hr>
-<section class="flash-section flash-message-section flash-bg-secondary">
-
-</section>
-
-<section class="flash-section">
-    <h2>Buttons</h2>
-    <button class="flash-button flash-primary-button"> Primary Button</button>
-    <button class="flash-button flash-secondary-button"> Secondary Button</button>
-    <button class="flash-button flash-info-button"> Info Button</button>
-    <button class="flash-button flash-warning-button"> Warning Button</button>
 </section>
 
 </body>
